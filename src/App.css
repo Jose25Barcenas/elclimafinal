@@ -1,0 +1,118 @@
+/* Estilo del cuerpo de pagina, color de fondo, color del texto, texto aliniado al centro,
+margen y fuente utilizada*/
+body {
+  background-color: #07c2ec;  
+  color:#17223b;
+  text-align: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/*Estilo del contenedor principal en la pagina. 
+Definimos tamaño maximo, margen, relleno del contenedor*/
+.container {
+  box-sizing: border-box;
+	max-width: 1040px;
+	width: 100%;
+	margin: 0 auto;	
+	padding: 20px;  
+}
+
+/*Estilo para una fila en la pagina*/
+.row {
+  display: flex;
+}
+
+/*Estilo del campo de entrada del texto. Define borde, redio del borde, ancho,
+relleno, tamaño de fuente, tranformacion del texto y alineacion*/
+input {
+  border: none;
+  border-radius: 0.4rem;            
+  width: 100%;
+  padding: 10px 6px;	
+  font-size: 16px;
+  font-weight: 600;	
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*Estilo del campo de entrada de texto cuando esta enfocado, quita el contorno predeterminado
+al obtener el enfoque*/
+input:focus {
+  outline: none;
+}
+
+/*Diseño del estilo de la targeta en la pagina.
+Margen superior, y centrar los elementos de la targeta horizontalmente*/
+.card {
+  margin-top: 20px;
+  display:flex;    
+  justify-content: center;
+}
+
+/*Estilo del contenedor en la targeta, margen radio del borde, posicion,
+ancho, altura, color de fondo y sombra*/
+.card-container {
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: absolute;    
+  width: 470px;
+  height: 470px;
+  background-color: #f2f4f6;    
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);       
+}
+
+/*Estilo del nombre de la ciudad dentro de la targeta
+peso de la fuente, tamaño, color*/
+.city-name {    
+  font-weight:300;
+  font-size:40px;
+  color: #0d0d0d;
+  bottom: 0;    
+}
+
+/*Estilo del icono en la targeta
+posicion, ancho, altura, posicion vertical, margenes del icono*/
+.icon {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  bottom: 280px;
+  float:right;
+  margin: 5px 5px 0 0;    
+}
+
+/*Estilo de la temperatura dentro de la targeta
+posicion, tamaño de la fuente, color del texto, desplazamiento a la derecha*/
+.temp {
+  position: relative;
+  font-weight:300;
+  font-size:80px;
+  color:#0e0e0e ;        
+  right: 120px;
+}
+
+/*Estilo del pie de pagina de la targeta
+color de fondo, color de texto, posicion, desplazamiento, radio del borde,
+centrado de elememtos y ancho del pie de pagina*/
+.card-footer {
+  background-color: #16459d;     
+  color: aliceblue;                
+  position:relative;
+  bottom: 280px;
+  border-radius: 0px 0px 20px 20px;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*Estilo de la temperatura maxima y minima*/
+.temp-max-min {    
+  font-weight:300;
+  font-size:50px;
+  color: aliceblue;    
+  
+}
